@@ -194,6 +194,7 @@ header {
 .nav_logo,
 .nav_toggle {
   font-weight: var(--font-medium);
+  font-size: var(--h2-font-size);
 }
 
 .nav_toggle {
@@ -501,7 +502,7 @@ header .container {
 }
 
 .logo img {
-  width: 70px;
+  width: 50px;
   margin-right: -0.4rem;
   margin-top: -0.4rem;
   align-self: center;
@@ -509,7 +510,7 @@ header .container {
 
 .logo h3 {
   columns: var(--darkTwo);
-  font-size: 1.55rem;
+  font-size: 1.3rem;
   line-height: 1.2;
   font-weight: 700;
   color: var(--mainColorTwo);
