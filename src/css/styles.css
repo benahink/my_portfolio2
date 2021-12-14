@@ -83,8 +83,8 @@
 
 .dark {
   --mainColorOne: #64bcf4;
-  --mainColorTwo: #1d3b58;
-  --hoverColor: #9ce1fc;
+  --mainColorTwo: #7fc8f0;
+  --hoverColor: #1d3b58;
   --backgroundColor: #1d1d2b;
   --darkOne: #f3f3f3;
   --darkTwo: #ffffff;
@@ -260,6 +260,7 @@ header {
 /* show menu */
 .show-menu {
   bottom: 0;
+  transition: ease-in-out 0.3s;
 }
 
 /*==================== HOME ====================*/
@@ -356,7 +357,7 @@ header {
 
 .home_scroll_name {
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: var(--darkTwo);
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
 }
@@ -400,6 +401,7 @@ header {
 .about_description {
   text-align: center;
   margin-bottom: var(--mb-2-5);
+  color: var(--lightOne);
 }
 
 .about_info {
@@ -411,7 +413,7 @@ header {
 .about_info-title {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
-  color: var(--title-color);
+  color: var(--lightOne);
 }
 
 .about_info-name {
@@ -660,7 +662,7 @@ header .container {
   }
 
   .nav {
-    height: calc(var(--header-height) + 1.5rem);
+    height: calc(var(--header-height) + 1.15rem);
     column-gap: 1rem;
   }
 
@@ -668,6 +670,10 @@ header .container {
   .nav_close,
   .nav_toggle {
     display: none;
+  }
+
+  .nav_close {
+    transition: ease-in-out 0.5s;
   }
 
   .nav_list {
