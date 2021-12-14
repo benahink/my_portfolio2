@@ -9,54 +9,55 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
   </head>
   <body>
-    <main>
-      <div class="big__wrapper dark">
-        <img src="./img/shape4.png" alt="shape" class="shape" />
-        <header>
-          <div class="container">
-            <div class="logo">
-              <img src="./img/logo.png" alt="logo" />
-              <h3>Beni Designs</h3>
-            </div>
-
-            <div class="links">
-              <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#" class="contact__btn">Contact Me</a></li>
-              </ul>
-            </div>
-          </div>
-        </header>
-
-        <div class="main__content">
-          <div class="container">
-            <div class="left__content">
-              <div class="title">
-                <h1>Frontend Developer,</h1>
-                <h1>Graphic Designer</h1>
-              </div>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                incidunt culpa voluptates eos maxime assumenda minima, veniam
-                atque quos quis, blanditiis voluptatibus similique quibusdam
-                earum vero rem, maiores enim ex?
-              </p>
-              <div class="cta">
-                <a href="" class="contact__btn">Get intouch</a>
-              </div>
-            </div>
-
-            <div class="right__content">
-              <img src="./img/shape4.png" alt="shape" class="shape4" />
-              <img src="./img/shape-face.png" alt="shape" class="face" />
-            </div>
-          </div>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav_logo logo">
+          <img src="./img/logo.png" alt="logo" />
+          <h3>Beni Designs</h3>
         </div>
 
+        <div class="nav_menu links" id="nav-menu">
+          <ul class="nav_list grid">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">
+                <i class="uil uil-estate nav_icon"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">
+                <i class="uil uil-user nav_icon"></i>
+                About Me
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#experience" class="nav_link">
+                <i class="uil uil-file-alt nav_icon"></i>
+                Experience
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#projects" class="nav_link">
+                <i class="uil uil-scenery nav_icon"></i>
+                Projects
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">
+                <i class="uil uil-message nav_icon"></i>
+                Contact Me
+              </a>
+            </li>
+          </ul>
+
+          <i class="uil uil-times nav_close" id="nav-close"></i>
+        </div>
         <div class="theme__toggle">
           <div class="container">
             <button class="toggle__btn">
@@ -65,8 +66,167 @@
             </button>
           </div>
         </div>
-      </div>
+
+        <div class="nav_btns">
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main big__wrapper light">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content grid">
+            <div class="home_social">
+              <a href="" class="home_social_icon">
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a href="" class="home_social_icon">
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a href="" class="home_social_icon">
+                <i class="uil uil-window"></i>
+              </a>
+            </div>
+            <div class="home_img">
+              <img src="./img/shape-face.svg" alt="shape" class="face" />
+            </div>
+
+            <div class="home_data">
+              <h1 class="home_title">Frontend Developer,</h1>
+              <h1 class="home_title">Graphic Designer</h1>
+
+              <p class="home_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                incidunt culpa voluptates eos maxime assumenda minima, veniam
+                atque quos quis.
+              </p>
+              <a href="#contact" class="contact__btn button button-flex">
+                Get in touch <i class="uil uil-message button_icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home_scroll">
+            <a href="#about" class="home_scroll_button button-flex">
+              <i class="uil uil-mouse-alt home_scroll_mouse"></i>
+              <span class="home_scroll_name">Scroll Down</span>
+              <i class="uil uil-arrow-down home_scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section_title">About Me</h2>
+        <span class="section_subtitle">Introduction</span>
+        <div class="about_container container grid">
+          <img src="./img/shape-face5.png" alt="" class="about_img" />
+
+          <div class="about_content grid">
+            <p class="about_description">
+              I am a Frontend Developer with extenive knowledge in React and
+              Vanilla Javascript. I love simple but functional design & strive
+              to create simply unique and functinal websites.
+            </p>
+            <div class="about_info">
+              <div>
+                <span class="about_info-title">2+</span>
+                <span class="about_info-name"
+                  >Years of<br />
+                  Experience
+                </span>
+              </div>
+
+              <div>
+                <span class="about_info-title">20+</span>
+                <span class="about_info-name"
+                  >Projects <br />
+                  Completed
+                </span>
+              </div>
+
+              <div>
+                <span class="about_info-title">2+</span>
+                <span class="about_info-name"
+                  >Years <br />
+                  Experience
+                </span>
+              </div>
+            </div>
+            <div class="about_resume-btn">
+              <a
+                download=""
+                href="/src/pdf/beni.pdf"
+                class="button button0-flex"
+              >
+                Download Resume
+                <i class="uil uil-download-alt button_icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+        <span class="section_subtitle">Get in touch</span>
+
+        <div class="contact_container container grid">
+          <div>
+            <div class="contact_info">
+              <i class="uil uil-envelope contact_icon"></i>
+
+              <div>
+                <h3 class="contact_title">Email me</h3>
+                <span class="contact_subtitle">benahink@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact_form grid">
+            <div class="contact_inputs grid">
+              <div class="contact_content">
+                <label for="" class="contact_label">Name</label>
+                <input type="text" class="contact_input" />
+              </div>
+              <div class="contact_content">
+                <label for="" class="contact_label">Email</label>
+                <input type="email" class="contact_input" />
+              </div>
+            </div>
+
+            <div class="contact_content">
+              <label for="" class="contact_label">Project</label>
+              <input type="text" class="contact_input" />
+            </div>
+            <div class="contact_content">
+              <label for="" class="contact_label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact_input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a href="#" class="button button-flex">
+                Send Message
+                <i class="uil uil-message button_icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+
     <script src="/src/js/main.js"></script>
   </body>
 </html>
