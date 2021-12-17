@@ -179,6 +179,7 @@ header {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
+  padding: 5px;
   background-color: var(--container-color);
 }
 
@@ -506,7 +507,7 @@ header .container {
 .logo img {
   width: 150px;
   margin-right: -0.4rem;
-  margin-top: -0.4rem;
+  margin: 0.5rem 0;
   align-self: center;
 }
 
@@ -595,7 +596,7 @@ header .container {
   }
 
   .logo img {
-    width: 60px;
+    width: 100px;
   }
 
   .logo h3 {
@@ -604,7 +605,7 @@ header .container {
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 540px) {
   .home_container {
     padding: 0rem 2rem;
   }
@@ -658,7 +659,7 @@ header .container {
 
   .header,
   .main {
-    padding: 0 1rem;
+    padding: 5px 1rem;
   }
 
   .nav {
